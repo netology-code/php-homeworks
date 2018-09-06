@@ -1,8 +1,8 @@
 # Необходимо создать TODO-приложение (список дел)
 
 Поскольку создание таблиц в полной мере мы еще не проходили, предлагаю использовать дамп данных и создать с его помощью таблицы task и user.
-
-> CREATE TABLE `task` (
+```
+ CREATE TABLE `task` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `assigned_user_id` int(11) DEFAULT NULL,
@@ -12,16 +12,14 @@
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
-
-
-> CREATE TABLE `user` (
+ CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+```
 
 # Необходимо реализовать возможность: 
 * Регистрации
